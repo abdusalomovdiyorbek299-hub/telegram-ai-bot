@@ -5,9 +5,11 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.types import FSInputFile
 from pdf2docx import Converter
 
-# SIZNING MA'LUMOTLARINGIZ
-BOT_TOKEN = "7727293237:AAHv6AkmY25fGg8l7PzvtPLLGowD6HKKnHQ"
-GEMINI_KEY = "AIzaSyAD3c1QwTdg1lkgJZgqMSw8xHrQMDs9UQc"
+import os
+
+# Kalitlarni xavfsiz o'qish
+BOT_TOKEN = os.getenv("7727293237:AAHv6AkmY25fGg8l7PzvtPLLGowD6HKKnHQ")
+GEMINI_KEY = os.getenv("AIzaSyCMN11InEzDquol6RogIXQOi3rdpIASLSM")
 
 # Gemini AI ni sozlash
 genai.configure(api_key=GEMINI_KEY)
