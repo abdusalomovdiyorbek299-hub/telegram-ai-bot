@@ -1,0 +1,4 @@
+aiogram
+google-generativeai
+pdf2docx
+python-docx
